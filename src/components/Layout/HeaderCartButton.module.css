@@ -1,0 +1,70 @@
+.button {
+  cursor: pointer;
+  font: inherit;
+  border: none;
+  background-color: #d468d1;
+  color: white;
+  padding: 0.75rem 3rem;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  .button {
+    padding: 0.4rem 1rem;
+    background-color: #8d448b;
+  }
+  .button:hover,
+  .button:active {
+    background-color: #8d448b !important;
+  }
+}
+
+.icon {
+  width: 1.35rem;
+  height: 1.35rem;
+  margin-right: 0.5rem;
+}
+
+.button:hover,
+.button:active {
+  background-color: #c05ebd;
+}
+
+.badge {
+  background-color: #8d448b;
+  padding: 0.25rem 1rem;
+  border-radius: 25px;
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+.button:hover .badge,
+.button:active .badge {
+  background-color: #8d448b;
+}
+
+.bump {
+  animation: bump 300ms ease-out;
+}
+
+@keyframes bump {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(0.9);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
